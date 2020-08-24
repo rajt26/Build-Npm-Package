@@ -1,16 +1,16 @@
-# dynemicmasters
+# dynamicmasters
 
 ## Installation
 
 **Installation is done using the npm install command**
 ```
-npm install dynemicmasters
+npm install dynamicmasters
 ```
 
 - **simple to use**
 ```
-const dynemicmasters = require('dynemicmasters')
-dynemicmasters.master(action, params)
+const dynamicmasters = require('dynamicmasters')
+dynamicmasters.master(action, params)
 ```
 
 
@@ -24,7 +24,7 @@ VIEW
 
 ```
 
-- **Methods of dynemicmasters**
+- **Methods of dynamicmasters**
 ```
 1.master  //for master crud operations
 2.country //for country crud operations
@@ -36,14 +36,14 @@ VIEW
 ## Example \
 
 ```
-const dynemicmasters = require('dynemicmasters')
+const dynamicmasters = require('dynamicmasters')
 app.post('/master/create', async (req, res) => {
     try {
         let params = {
             name: req.body.name,
         }
         let action = 'CREATE'
-        let response = await dynemicmasters.master(action, params)
+        let response = await dynamicmasters.master(action, params)
         return res.send(response)
     } catch (error) {
         console.log('error', error)
@@ -55,4 +55,4 @@ app.post('/master/create', async (req, res) => {
 
 
 
-## https://github.com/rajt26/dynemicmasters_demo
+## https://github.com/rajt26/dynamicmasters_demo
