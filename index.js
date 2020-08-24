@@ -1,7 +1,4 @@
-const express = require('express')
-const app = express()
 const mongoose = require('mongoose')
-const bodyParser = require('body-parser')
 require('dotenv').config()
 const MasterService = require('./MasterService')
 const _ = require('lodash')
@@ -324,8 +321,3 @@ module.exports = {
     }
 
 }
-
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
-
-// app.listen(process.env.PORT, () => { console.log(`listening on ${process.env.PORT}`) })
