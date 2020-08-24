@@ -1,6 +1,6 @@
 {
   "name": "dynamicmasters",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "create dynamic masters",
   "main": "index.js",
   "scripts": {
