@@ -2,31 +2,43 @@
 
 ## Installation
 
-**Installation is done using the npm install command**
+**Installation is done using the npm install command**\
 `npm install dynemicmasters`
 
-**simple to use:**
-`const dynemicmasters = require('dynemicmasters')`
+**simple to use**\
+``` const dynemicmasters = require('dynemicmasters') \ dynemicmasters.master(action, params) ```
 
-**For create master call `master` method**
-`dynemicmasters.master(action, params)`
-//action : CREATE,UPDATE,SOFTDELETE,DELETE,VIEW
-//params : pass params for performing master realated operations
 
-**For craete country call `country` method**
-`dynemicmasters.country(action, params)`
-//action : CREATE,UPDATE,SOFTDELETE,DELETE,VIEW
-//params : pass params for performing country realated operations
+**action** you can pass following action: \
+`CREATE \ UPDATE \ SOFTDELETE \ DELETE \ VIEW `
 
-**For craete state call `state` method**
-`dynemicmasters.state(action, params)`
-//action : CREATE,UPDATE,SOFTDELETE,DELETE,VIEW
-//params : pass params for performing state realated operations
+**Methods of dynemicmasters**\
+1.master  //for master crud operations
+2.country //for country crud operations
+3.state  //for state crud operations
+4.city  //for city crud operations
 
-**For craete city call `city` method**
-`dynemicmasters.city(action, params)`
-//action : CREATE,UPDATE,SOFTDELETE,DELETE,VIEW
-//params : pass params for performing city realated operations
+
+## Example \
+
+```
+const dynemicmasters = require('dynemicmasters')
+app.post('/master/create', async (req, res) => {
+    try {
+        let params = {
+            name: req.body.name,
+        }
+        let action = 'CREATE'
+        let response = await dynemicmasters.master(action, params)
+        return res.send(response)
+    } catch (error) {
+        console.log('error', error)
+        res.send(error)
+
+    }
+})
+```
+
 
 
 ## https://github.com/rajt26/dynemicmasters_demo
