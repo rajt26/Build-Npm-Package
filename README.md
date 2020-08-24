@@ -2,22 +2,36 @@
 
 ## Installation
 
-**Installation is done using the npm install command**\
-`npm install dynemicmasters`
+**Installation is done using the npm install command**
+```
+npm install dynemicmasters
+```
 
-**simple to use**\
-``` const dynemicmasters = require('dynemicmasters') \ dynemicmasters.master(action, params) ```
+- **simple to use**
+```
+const dynemicmasters = require('dynemicmasters')
+dynemicmasters.master(action, params)
+```
 
 
-**action** you can pass following action: \
-`CREATE \ UPDATE \ SOFTDELETE \ DELETE \ VIEW `
+- **action** you can pass following action:
+```
+CREATE
+UPDATE
+SOFTDELETE
+DELETE
+VIEW
 
-**Methods of dynemicmasters**\
+```
+
+- **Methods of dynemicmasters**
+```
 1.master  //for master crud operations
 2.country //for country crud operations
 3.state  //for state crud operations
 4.city  //for city crud operations
 
+```
 
 ## Example \
 
