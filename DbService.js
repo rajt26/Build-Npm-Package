@@ -54,7 +54,6 @@ module.exports = {
         try {
             let { query, data } = options
             let results = await model.findOneAndUpdate(query, data, { new: true })
-            console.log('results', results);
             return results;
         } catch (error) {
             console.log('error', error);
