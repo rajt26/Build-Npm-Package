@@ -1,6 +1,6 @@
 {
   "name": "dynemicmasters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "create dynemic masters",
   "main": "index.js",
   "scripts": {
