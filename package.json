@@ -21,9 +21,7 @@
     "decimal.js": "^10.2.0",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.20",
-    "mongoose": "^5.10.0",
-    "path": "^0.12.7",
-    "request": "^2.88.2"
+    "mongoose": "^5.10.0"
   },
   "keywords": [
     "npm",
