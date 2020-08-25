@@ -1,6 +1,6 @@
 {
   "name": "dynamicmasters",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "create dynamic masters",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,12 @@
     "mongoose": "^5.10.0",
     "path": "^0.12.7",
     "request": "^2.88.2"
-  }
+  },
+  "keywords": [
+    "npm",
+    "dynamicmasters",
+    "masters",
+    "dynamic",
+    "npm masters"
+  ]
 }
