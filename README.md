@@ -33,7 +33,13 @@ VIEW
 
 ```
 
-## Example \
+- **Database Connection**
+- create .env file
+```
+mongoURI='connection string'
+```
+
+## Example
 
 ```
 const dynamicmasters = require('dynamicmasters')
